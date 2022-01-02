@@ -44,3 +44,58 @@ Los resultados que hemos obtenido en los datasets son los siguientes:
 | Media | 6.561,40 | 672.343,00 | 3.102,00 | 142.603,00 |
 | Desviación | 71,67 | 6.587,33 | 29,36 | 1.350,90 |
 
+<table style="width:100%">
+    <tr>
+        <th>Arquitectura</th>
+        <th>Métrica</th>
+        <th>Set5</th>
+        <th>Set14</th>
+        <th>Urban100</th>
+        <th>Manga109</th>
+    </tr>
+    <tr>
+        <th rowspan='2'>RCAN (Original)</th>
+        <th>PSNR</th>
+        <th>34,74</th>
+        <th>30,65</th>
+        <th>29,09</th>
+        <th>34,44</th>
+    </tr>
+    <tr>
+        <th>SSIM</th>
+        <th>0,9299</th>
+        <th>0,8482</th>
+        <th>0,8702</th>
+        <th>0,9499</th>
+    </tr>
+    <tr>
+        <th rowspan='2'>RCAN (TF 1.13)</th>
+        <th>PSNR</th>
+        <th>34,75</th>
+        <th>30,61</th>
+        <th>29,03</th>
+        <th>34,49</th>
+    </tr>
+    <tr>
+        <th>SSIM</th>
+        <th>0,9302</th>
+        <th>0,8470</th>
+        <th>0,8693</th>
+        <th>0,9500</th>
+    </tr>
+    <tr>
+        <th rowspan='2'>RCAN (TF 2.4 - nuestro)</th>
+        <th>PSNR</th>
+        <th>34,68</th>
+        <th>30,31</th>
+        <th>28,90</th>
+        <th>34,31</th>
+    </tr>
+    <tr>
+        <th>SSIM</th>
+        <th>0,9300</th>
+        <th>0,8474</th>
+        <th>0,8679</th>
+        <th>0,9494</th>
+    </tr>
+</table>
