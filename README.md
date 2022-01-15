@@ -252,6 +252,6 @@ Los resultados de este algoritmo en los datasets son:
     </tr>
 </table>
 
-<img src="imagenes/SCE_130.tiff" width="300px"/> <img src="imagenes/SCE_280.tiff" width="300px"/>
+<img src="imagenes/SCH_130.tiff" width="300px"/> <img src="imagenes/SCH_280.tiff" width="300px"/>
 
 ---
