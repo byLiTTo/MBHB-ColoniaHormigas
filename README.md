@@ -33,69 +33,61 @@ El siguiente algoritmo forma parte de un conjunto que da título a esta práctic
 
 Los resultados que hemos obtenido en los datasets son los siguientes:
 
-| | | Algoritmo SH | | |
-|:--:|:--:|:--:|:--:|:--:|
-| | Dataset Ch130 | | Dataset A280 | |
-| Ejecución 1 | 6.478 | 680.061 | 3.084 | 143.481 |
-| Ejecución 2 | 6.674 | 663.401 | 3.155 | 142.671 |
-| Ejecución 3 | 6.613 | 669.941 | 3.079 | 139.971 |
-| Ejecución 4 | 6.529 | 668.451 | 3.079 | 143.461 |
-| Ejecución 5 | 6.513 | 679.861 | 3.113 | 143.431 |
-| Media | 6.561,40 | 672.343,00 | 3.102,00 | 142.603,00 |
-| Desviación | 71,67 | 6.587,33 | 29,36 | 1.350,90 |
-
 <table style="width:100%">
     <tr>
-        <th>Arquitectura</th>
-        <th>Métrica</th>
-        <th>Set5</th>
-        <th>Set14</th>
-        <th>Urban100</th>
-        <th>Manga109</th>
+        <th colspan='5'> <p align="center"> Algoritmo SH </th>
     </tr>
     <tr>
-        <th rowspan='2'>RCAN (Original)</th>
-        <th>PSNR</th>
-        <th>34,74</th>
-        <th>30,65</th>
-        <th>29,09</th>
-        <th>34,44</th>
+        <th></th>
+        <th colspan='2'>Dataset Ch130</th>
+        <th colspan='2'>Dataset A280</th>
     </tr>
     <tr>
-        <th>SSIM</th>
-        <th>0,9299</th>
-        <th>0,8482</th>
-        <th>0,8702</th>
-        <th>0,9499</th>
+        <th>Ejecución 1</th>
+        <th>6.478</th>
+        <th>680.061</th>
+        <th>3.084</th>
+        <th>143.481</th>
     </tr>
     <tr>
-        <th rowspan='2'>RCAN (TF 1.13)</th>
-        <th>PSNR</th>
-        <th>34,75</th>
-        <th>30,61</th>
-        <th>29,03</th>
-        <th>34,49</th>
+        <th>Ejecución 2</th>
+        <th>6.674</th>
+        <th>663.401</th>
+        <th>3.155</th>
+        <th>142.671</th>
     </tr>
     <tr>
-        <th>SSIM</th>
-        <th>0,9302</th>
-        <th>0,8470</th>
-        <th>0,8693</th>
-        <th>0,9500</th>
+        <th>Ejecución 3</th>
+        <th>6.613</th>
+        <th>669.941</th>
+        <th>3.079</th>
+        <th>139.971</th>
     </tr>
     <tr>
-        <th rowspan='2'>RCAN (TF 2.4 - nuestro)</th>
-        <th>PSNR</th>
-        <th>34,68</th>
-        <th>30,31</th>
-        <th>28,90</th>
-        <th>34,31</th>
+        <th>Ejecución 4</th>
+        <th>6.529</th>
+        <th>668.451</th>
+        <th>3.079</th>
+        <th>143.461</th>
     </tr>
     <tr>
-        <th>SSIM</th>
-        <th>0,9300</th>
-        <th>0,8474</th>
-        <th>0,8679</th>
-        <th>0,9494</th>
+        <th>Ejecución 5</th>
+        <th>6.513</th>
+        <th>679.861</th>
+        <th>3.113</th>
+        <th>143.431</th>
     </tr>
-</table>
+    <tr>
+        <th>Media</th>
+        <th>6.561,40</th>
+        <th>672.343,00</th>
+        <th>3.102,00</th>
+        <th>142.603,00</th>
+    </tr>
+    <tr>
+        <th>Desviación</th>
+        <th>71,67</th>
+        <th>6.587,33</th>
+        <th>29,36</th>
+        <th>1.350,90</th>
+    </tr>
