@@ -100,7 +100,7 @@ Los resultados que hemos obtenido en los datasets son los siguientes:
     </tr>
 </table>
 
-<img src="imagenes/SH_130.tiff" width="300px"/> <img src="imagenes/SH_280.tiff" width="300px"/>
+<img src="imagenes/SH_130.tiff" width="400px"/> <img src="imagenes/SH_280.tiff" width="400px"/>
 
 En cuanto a la implementación, como datos a destacar, podemos decir que no hemos hecho uso de la tabla L que se menciona en la teoría, en su lugar hemos creado una clase a modo de Agente, llamada Hormiga. Aquí se encuentra el vector solución que se construye a partir de la solución aleatoria inicial que se le indica en su constructor.   
 
@@ -178,7 +178,7 @@ Los datos obtenidos en los diferentes datasets son:
     </tr>
 </table>
 
-<img src="imagenes/SHE_130.tiff" width="300px"/> <img src="imagenes/SHE_280.tiff" width="300px"/>
+<img src="imagenes/SHE_130.tiff" width="400px"/> <img src="imagenes/SHE_280.tiff" width="400px"/>
 
 ## Algoritmo de Sistema de Colonia de Hormigas
 Se podría decir que es una mejora o extensión del anterior algoritmo, sistema de hormigas. Se distingue de éste en tres aspectos: Se establece un equilibrio entre exploración y explotación en la regla probabilística de transición. Para la actualización global de la feromona solo se considera la hormiga con mejor resultado y solo se evaporan los arcos por donde ha pasado ésta. Se añade una actualización de la feromona local, es decir, en cada hormiga, consiguiendo así diversificación en la búsqueda.
@@ -252,6 +252,6 @@ Los resultados de este algoritmo en los datasets son:
     </tr>
 </table>
 
-<img src="imagenes/SCH_130.tiff" width="300px"/> <img src="imagenes/SCH_280.tiff" width="300px"/>
+<img src="imagenes/SCH_130.tiff" width="400px"/> <img src="imagenes/SCH_280.tiff" width="400px"/>
 
 ---
