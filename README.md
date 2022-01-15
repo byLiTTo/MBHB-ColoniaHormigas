@@ -91,3 +91,5 @@ Los resultados que hemos obtenido en los datasets son los siguientes:
         <th>29,36</th>
         <th>1.350,90</th>
     </tr>
+
+<img src="imagenes/SH_280.tiff" />
