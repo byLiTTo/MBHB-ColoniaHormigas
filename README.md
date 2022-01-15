@@ -305,9 +305,7 @@ A continuación, se presentan los resultados obtenidos realizarse cómodamente s
         <th>6.497</th>
         <th>56,20</th>
     </tr>
-</table>
-
-<table style="width:100%">
+</table> <table style="width:100%">
     <tr>
         <th colspan='5'> Dataset A280</th>
     </tr>
