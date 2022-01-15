@@ -184,3 +184,74 @@ Los datos obtenidos en los diferentes datasets son:
 Se podría decir que es una mejora o extensión del anterior algoritmo, sistema de hormigas. Se distingue de éste en tres aspectos: Se establece un equilibrio entre exploración y explotación en la regla probabilística de transición. Para la actualización global de la feromona solo se considera la hormiga con mejor resultado y solo se evaporan los arcos por donde ha pasado ésta. Se añade una actualización de la feromona local, es decir, en cada hormiga, consiguiendo así diversificación en la búsqueda.
 
 Los resultados de este algoritmo en los datasets son:
+
+<table style="width:100%">
+    <tr>
+        <th colspan='5'> Algoritmo SCE</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th colspan='2'>Dataset Ch130</th>
+        <th colspan='2'>Dataset A280</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>Coste</th>
+        <th>Evaluaciones</th>
+        <th>Coste</th>
+        <th>Evaluaciones</th>
+    </tr>
+    <tr>
+        <th>Ejecución 1</th>
+        <th>6.355</th>
+        <th>150.561</th>
+        <th>2.753</th>
+        <th>43.031</th>
+    </tr>
+    <tr>
+        <th>Ejecución 2</th>
+        <th>6.344</th>
+        <th>159.361</th>
+        <th>2.723</th>
+        <th>42.601</th>
+    </tr>
+    <tr>
+        <th>Ejecución 3</th>
+        <th>6.497</th>
+        <th>150.111</th>
+        <th>2.694</th>
+        <th>43.001</th>
+    </tr>
+    <tr>
+        <th>Ejecución 4</th>
+        <th>6.381</th>
+        <th>152.141</th>
+        <th>2.859</th>
+        <th>44.331</th>
+    </tr>
+    <tr>
+        <th>Ejecución 5</th>
+        <th>6.359</th>
+        <th>256.241</th>
+        <th>2.718</th>
+        <th>41.891</th>
+    </tr>
+    <tr>
+        <th>Media</th>
+        <th>6.387,20</th>
+        <th>173.683,00</th>
+        <th>2.749,40</th>
+        <th>42.971,00</th>
+    </tr>
+    <tr>
+        <th>Desviación</th>
+        <th>56,20</th>
+        <th>41.413,20</th>
+        <th>57,91</th>
+        <th>794,66</th>
+    </tr>
+</table>
+
+<img src="imagenes/SCE_130.tiff" width="300px"/> <img src="imagenes/SCE_280.tiff" width="300px"/>
+
+---
