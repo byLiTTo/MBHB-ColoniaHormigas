@@ -43,6 +43,13 @@ Los resultados que hemos obtenido en los datasets son los siguientes:
         <th colspan='2'>Dataset A280</th>
     </tr>
     <tr>
+        <th></th>
+        <th>Coste</th>
+        <th>Evaluaciones</th>
+        <th>Coste</th>
+        <th>Evaluaciones</th>
+    </tr>
+    <tr>
         <th>Ejecución 1</th>
         <th>6.478</th>
         <th>680.061</th>
@@ -93,5 +100,87 @@ Los resultados que hemos obtenido en los datasets son los siguientes:
     </tr>
 </table>
 
-<img src="imagenes/SH_130.tiff" width="300"/>
-<img src="imagenes/SH_280.tiff" width="300"/>
+<img src="imagenes/SH_130.tiff" width="300px"/> <img src="imagenes/SH_280.tiff" width="300px"/>
+
+En cuanto a la implementación, como datos a destacar, podemos decir que no hemos hecho uso de la tabla L que se menciona en la teoría, en su lugar hemos creado una clase a modo de Agente, llamada Hormiga. Aquí se encuentra el vector solución que se construye a partir de la solución aleatoria inicial que se le indica en su constructor.   
+
+A modo de optimización y a la hora de estructurar y plantear la programación nos pareció más sencillo, hemos optado por hacer uso de una tabla double NxN en la que cada hormiga suma los aportes, en lugar de para cada arco del grafo, comprobar si la hormiga ha pasado o no.
+
+## Algoritmo de Sistema de Hormigas Elitista
+En este algoritmo, se implementa una modificación con respecto al anterior que hace que la mejor ruta realizada hasta el momento, la mejor global, tenga también un aporte en la actualización de las feromonas, con el objetivo de alcanzar una mejor convergencia. Concretamente, aportará como si hubiera sido 15 hormigas que han hecho esa misma ruta.
+
+Los datos obtenidos en los diferentes datasets son:
+
+<table style="width:100%">
+    <tr>
+        <th colspan='5'> Algoritmo SHE</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th colspan='2'>Dataset Ch130</th>
+        <th colspan='2'>Dataset A280</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>Coste</th>
+        <th>Evaluaciones</th>
+        <th>Coste</th>
+        <th>Evaluaciones</th>
+    </tr>
+    <tr>
+        <th>Ejecución 1</th>
+        <th>6.347</th>
+        <th>210.341</th>
+        <th>2.745</th>
+        <th>106.741</th>
+    </tr>
+    <tr>
+        <th>Ejecución 2</th>
+        <th>6.366</th>
+        <th>294.401</th>
+        <th>2.769</th>
+        <th>106.781</th>
+    </tr>
+    <tr>
+        <th>Ejecución 3</th>
+        <th>6.287</th>
+        <th>231.861</th>
+        <th>2.751</th>
+        <th>109.411</th>
+    </tr>
+    <tr>
+        <th>Ejecución 4</th>
+        <th>6.545</th>
+        <th>229.441</th>
+        <th>2.652</th>
+        <th>92.361</th>
+    </tr>
+    <tr>
+        <th>Ejecución 5</th>
+        <th>6.361</th>
+        <th>222.181</th>
+        <th>2.656</th>
+        <th>95.341</th>
+    </tr>
+    <tr>
+        <th>Media</th>
+        <th>6.381,20</th>
+        <th>237.645,00</th>
+        <th>2.714,60</th>
+        <th>102.127,00</th>
+    </tr>
+    <tr>
+        <th>Desviación</th>
+        <th>86,61</th>
+        <th>29.348,42</th>
+        <th>50,11</th>
+        <th>6.891,01</th>
+    </tr>
+</table>
+
+<img src="imagenes/SHE_130.tiff" width="300px"/> <img src="imagenes/SHE_280.tiff" width="300px"/>
+
+## Algoritmo de Sistema de Colonia de Hormigas
+Se podría decir que es una mejora o extensión del anterior algoritmo, sistema de hormigas. Se distingue de éste en tres aspectos: Se establece un equilibrio entre exploración y explotación en la regla probabilística de transición. Para la actualización global de la feromona solo se considera la hormiga con mejor resultado y solo se evaporan los arcos por donde ha pasado ésta. Se añade una actualización de la feromona local, es decir, en cada hormiga, consiguiendo así diversificación en la búsqueda.
+
+Los resultados de este algoritmo en los datasets son:
