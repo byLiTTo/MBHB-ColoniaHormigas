@@ -255,3 +255,113 @@ Los resultados de este algoritmo en los datasets son:
 <img src="imagenes/SCH_130.tiff" width="400px"/> <img src="imagenes/SCH_280.tiff" width="400px"/>
 
 ---
+
+# Comparación global de los algoritmos
+A continuación, se presentan los resultados obtenidos realizarse cómodamente su comparación.
+
+<table style="width:100%">
+    <tr>
+        <th colspan='5'> Dataset Ch130</th>
+    </tr>
+    <tr>
+        <th>Algoritmo</th>
+        <th>Mejor</th>
+        <th>Media</th>
+        <th>Peor</th>
+        <th>Desviación</th>
+    </tr>
+    <tr>
+        <th>Óptima</th>
+        <th>-</th>
+        <th>6.110</th>
+        <th>-</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <th>Greedy</th>
+        <th>-</th>
+        <th>7579</th>
+        <th>-</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <th>SH</th>
+        <th>6.478</th>
+        <th>6.561,40</th>
+        <th>6.674</th>
+        <th>71,67</th>
+    </tr>
+    <tr>
+        <th>SHE</th>
+        <th>6.287</th>
+        <th>6.381,20</th>
+        <th>6.545</th>
+        <th>86,61</th>
+    </tr>
+    <tr>
+        <th>SCH</th>
+        <th>6.344</th>
+        <th>6.387,20</th>
+        <th>6.497</th>
+        <th>56,20</th>
+    </tr>
+</table>
+
+<table style="width:100%">
+    <tr>
+        <th colspan='5'> Dataset A280</th>
+    </tr>
+    <tr>
+        <th>Algoritmo</th>
+        <th>Mejor</th>
+        <th>Media</th>
+        <th>Peor</th>
+        <th>Desviación</th>
+    </tr>
+    <tr>
+        <th>Óptima</th>
+        <th>-</th>
+        <th>2.579</th>
+        <th>-</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <th>Greedy</th>
+        <th>-</th>
+        <th>3157</th>
+        <th>-</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <th>SH</th>
+        <th>3.079</th>
+        <th>3.102,00</th>
+        <th>3.155</th>
+        <th>29,36</th>
+    </tr>
+    <tr>
+        <th>SHE</th>
+        <th>2.652</th>
+        <th>2.714,60</th>
+        <th>2.769</th>
+        <th>50,11</th>
+    </tr>
+    <tr>
+        <th>SCH</th>
+        <th>2.694</th>
+        <th>2.749,40</th>
+        <th>2.859</th>
+        <th>57,91</th>
+    </tr>
+</table>
+
+Una de las primeras conclusiones que podemos sacar de los resultados es sobre el algoritmo greedy, a pesar de estar ante un problema NP, en el que existen una desorbitada cantidad de soluciones posibles, sorprende como la aplicación de una idea tan básica como es la de ir siempre a por la ciudad más cercana, aporta unos resultados más que decentes, aunque no significa que no puedan ser mejorables. Si queremos profundizar e ir hacia soluciones más notables, es necesario aumentar en gran medida el tiempo de cómputo.
+
+Centrándonos en los algoritmos basados en colonias de hormigas, podemos observar como a pesar de variar las semillas, las desviaciones de sus costes son muy reducidas. Con esto, podríamos afirmar que los algoritmos tienen un funcionamiento correcto y cumplen su objetivo independientemente de las condiciones iniciales.
+
+Observando el algoritmo SH, podemos ver como alcanza resultados mejores que greedy, pero no muy dispares, de hecho, en el dataset A280, es bastante cercano. Esto puede deberse al problema de convergencia expuesto en la teoría que suele presentar el algoritmo, que converge lento. Esto se puede confirmar al mirar las gráficas generadas, donde podemos apreciar “escalones” propios de caer en óptimos locales.
+
+
+Como alternativa a este fallo propio del SH, se implementaron los algoritmos SHE y SCH, que como podemos observar, efectivamente tienen una mejora en comparación al SH. Ambos aportan soluciones próximas a la óptima y entre ellos la media podemos ver como son bastante similares, en el caso de Ch130, podríamos decir que la solución del SCH es más sólida, debido a la poca desviación entre sus soluciones. En cuanto al SHE podríamos decir que encuentra en ejecuciones separadas, mejores óptimos, ya que como podemos apreciar, en ambos dataset el mejor resultado lo tiene SHE, esto podría deberse a una mejor convergencia en ciertas situaciones, ya que SCH busca cierto equilibrio en su regla de transición.
+
+---
