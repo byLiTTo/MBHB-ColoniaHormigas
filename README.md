@@ -35,7 +35,7 @@ Los resultados que hemos obtenido en los datasets son los siguientes:
 
 <table style="width:100%">
     <tr>
-        <th colspan='5'> <p align="center"> Algoritmo SH </th>
+        <th colspan='5'> Algoritmo SH</th>
     </tr>
     <tr>
         <th></th>
